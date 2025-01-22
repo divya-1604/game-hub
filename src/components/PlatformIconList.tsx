@@ -31,7 +31,7 @@ const PlatformIconList = ({ platforms }: Props) => {
     // them.space value by default 4px in chakra{1}=>1*4
     <HStack marginY={1}>
       {platforms.map((platform) => (
-        <Icon as={iconMap[platform.slug]} color="gray.500" />
+        <Icon key={platform.id} as={iconMap[platform.slug]} color="gray.500" />
       ))}
     </HStack>
   );
